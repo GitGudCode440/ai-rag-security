@@ -1,0 +1,87 @@
+CVE-2023-0001: SQL Injection Vulnerability
+Description: SQL injection vulnerability in web application login forms allows attackers to bypass authentication by inserting malicious SQL commands.
+Severity: CRITICAL
+Impact: Unauthorized database access, data theft, complete system compromise
+Common Targets: Web applications with improper input validation
+Attack Pattern: Injection of SQL commands through user input fields like login forms, search boxes
+
+---
+
+CVE-2023-0002: Remote Code Execution via Buffer Overflow
+Description: Buffer overflow in network service allows remote code execution when specially crafted packets are sent.
+Severity: CRITICAL
+Impact: Complete system takeover, malware installation, data exfiltration
+Common Targets: Network services, unpatched systems
+Attack Pattern: Sending oversized data to trigger buffer overflow and execute arbitrary code
+
+---
+
+CVE-2023-0003: Cross-Site Scripting (XSS)
+Description: Cross-site scripting vulnerability allows injection of malicious scripts into web pages viewed by other users.
+Severity: HIGH
+Impact: Session hijacking, credential theft, malware distribution
+Common Targets: Web applications with unsanitized user input
+Attack Pattern: Injection of JavaScript code through comment fields, profile data, or search queries
+
+---
+
+CVE-2023-0004: Privilege Escalation
+Description: Local privilege escalation allowing standard users to gain administrator/root access.
+Severity: HIGH
+Impact: Complete system control, persistent access, security bypass
+Common Targets: Operating systems with improper permission checks
+Attack Pattern: Exploiting misconfigured permissions or kernel vulnerabilities
+
+---
+
+CVE-2023-0005: Brute Force SSH Attack
+Description: Multiple failed SSH authentication attempts indicating brute force attack.
+Severity: MEDIUM
+Impact: Unauthorized system access if credentials are weak
+Common Targets: Servers with SSH exposed to internet
+Attack Pattern: Automated password guessing against SSH service
+
+---
+
+CVE-2023-0006: Denial of Service (DoS)
+Description: Distributed denial of service attack overwhelming system resources.
+Severity: HIGH
+Impact: Service disruption, downtime, financial loss
+Common Targets: Public-facing web services and APIs
+Attack Pattern: Flooding target with excessive requests from multiple sources
+
+---
+
+CVE-2023-0007: Malware Detection - Trojan
+Description: Trojan malware detected attempting to establish backdoor access.
+Severity: CRITICAL
+Impact: Data theft, system compromise, network propagation
+Common Targets: Endpoint systems, user workstations
+Attack Pattern: Disguised as legitimate software, opens backdoor for attacker
+
+---
+
+CVE-2023-0008: Phishing Attack
+Description: Phishing email campaign attempting to steal user credentials.
+Severity: MEDIUM
+Impact: Credential theft, account compromise, data breach
+Common Targets: End users, corporate email systems
+Attack Pattern: Fake emails impersonating trusted entities requesting login credentials
+
+---
+
+CVE-2023-0009: Ransomware
+Description: Ransomware encryption detected on file systems.
+Severity: CRITICAL
+Impact: Data encryption, business disruption, ransom demands
+Common Targets: Enterprise networks, critical infrastructure
+Attack Pattern: File encryption followed by ransom demand for decryption key
+
+---
+
+CVE-2023-0010: Data Exfiltration
+Description: Unusual outbound data transfer indicating potential data theft.
+Severity: HIGH
+Impact: Confidential data loss, compliance violations, reputation damage
+Common Targets: Databases, file servers with sensitive information
+Attack Pattern: Large data transfers to external destinations during off-hours

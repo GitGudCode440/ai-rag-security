@@ -1,0 +1,87 @@
+MITRE ATT&CK Pattern: T1190 - Exploit Public-Facing Application
+Description: Adversaries exploit vulnerabilities in internet-facing systems to gain initial access.
+Tactics: Initial Access
+Examples: SQL injection, command injection, web application exploits
+Detection: Monitor for unusual web traffic patterns, failed authentication attempts, error messages
+Prevention: Regular patching, web application firewalls, input validation
+
+---
+
+MITRE ATT&CK Pattern: T1110 - Brute Force
+Description: Adversaries use brute force techniques to guess passwords or encryption keys.
+Tactics: Credential Access
+Examples: Password spraying, credential stuffing, SSH brute force
+Detection: Multiple failed login attempts from same IP, unusual login times
+Prevention: Account lockout policies, multi-factor authentication, strong password requirements
+
+---
+
+MITRE ATT&CK Pattern: T1566 - Phishing
+Description: Adversaries send phishing messages to gain access to victim systems or credentials.
+Tactics: Initial Access
+Examples: Spear phishing emails, malicious attachments, credential harvesting sites
+Detection: Email content analysis, suspicious links, unexpected attachments
+Prevention: Security awareness training, email filtering, link verification
+
+---
+
+MITRE ATT&CK Pattern: T1486 - Data Encrypted for Impact
+Description: Adversaries encrypt data on target systems to disrupt operations (ransomware).
+Tactics: Impact
+Examples: Ransomware attacks, file encryption, system lockdown
+Detection: Rapid file modifications, unusual encryption activity, ransom notes
+Prevention: Regular backups, endpoint protection, network segmentation
+
+---
+
+MITRE ATT&CK Pattern: T1078 - Valid Accounts
+Description: Adversaries use legitimate credentials to gain access and maintain persistence.
+Tactics: Persistence, Privilege Escalation
+Examples: Stolen credentials, compromised accounts, insider threats
+Detection: Unusual login locations, off-hours access, privilege changes
+Prevention: Multi-factor authentication, privileged access management, activity monitoring
+
+---
+
+MITRE ATT&CK Pattern: T1059 - Command and Scripting Interpreter
+Description: Adversaries execute commands and scripts to perform various actions.
+Tactics: Execution
+Examples: PowerShell, Bash scripts, Python scripts, command injection
+Detection: Unusual script execution, suspicious command-line arguments
+Prevention: Application whitelisting, script execution policies, monitoring
+
+---
+
+MITRE ATT&CK Pattern: T1071 - Application Layer Protocol
+Description: Adversaries communicate using application layer protocols to avoid detection.
+Tactics: Command and Control
+Examples: HTTP/HTTPS tunneling, DNS tunneling, web services abuse
+Detection: Unusual outbound connections, non-standard protocol usage
+Prevention: Network monitoring, proxy filtering, egress filtering
+
+---
+
+MITRE ATT&CK Pattern: T1027 - Obfuscated Files or Information
+Description: Adversaries obfuscate files or information to make detection difficult.
+Tactics: Defense Evasion
+Examples: Encoded payloads, packed malware, steganography
+Detection: Entropy analysis, behavioral analysis, sandbox execution
+Prevention: Advanced malware detection, code analysis, sandboxing
+
+---
+
+MITRE ATT&CK Pattern: T1046 - Network Service Scanning
+Description: Adversaries scan for network services to identify potential targets.
+Tactics: Discovery
+Examples: Port scanning, service enumeration, vulnerability scanning
+Detection: Unusual scanning activity, sequential port access attempts
+Prevention: Network segmentation, intrusion detection systems, firewall rules
+
+---
+
+MITRE ATT&CK Pattern: T1567 - Exfiltration Over Web Service
+Description: Adversaries exfiltrate data using web services to blend with normal traffic.
+Tactics: Exfiltration
+Examples: Cloud storage uploads, social media posts, third-party file sharing
+Detection: Large data uploads, unusual cloud service access, off-hours transfers
+Prevention: Data loss prevention, web filtering, access controls
